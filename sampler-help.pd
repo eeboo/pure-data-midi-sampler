@@ -1,0 +1,20 @@
+#N canvas 588 220 1011 412 10;
+#X obj 130 277 dac~;
+#X obj 140 146 adc~;
+#X obj 167 36 hsl 128 15 0 1999 0 1 empty empty Start -2 -8 0 10 -262144
+-1 -1 2000 0;
+#X obj 307 33 hsl 128 15 0 2000 0 1 empty empty End -2 -8 0 10 -262144
+-1 -1 4100 0;
+#X obj 98 32 bng 53 250 50 0 empty empty Play 0 -10 0 10 -262144 -1
+-1;
+#X obj 33 34 bng 53 250 50 0 empty empty Record 0 -10 0 10 -262144
+-258625 -1;
+#X text 32 11;
+#X obj 125 178 sampler 2000 1 41;
+#X connect 1 0 7 1;
+#X connect 2 0 7 3;
+#X connect 3 0 7 4;
+#X connect 4 0 7 2;
+#X connect 5 0 7 0;
+#X connect 7 0 0 0;
+#X connect 7 0 0 1;
