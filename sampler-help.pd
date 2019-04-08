@@ -1,20 +1,39 @@
-#N canvas 588 220 1011 412 10;
-#X obj 130 277 dac~;
-#X obj 140 146 adc~;
+#N canvas 477 265 1011 412 10;
 #X obj 167 36 hsl 128 15 0 1999 0 1 empty empty Start -2 -8 0 10 -262144
--1 -1 2000 0;
+-1 -1 1700 0;
 #X obj 307 33 hsl 128 15 0 2000 0 1 empty empty End -2 -8 0 10 -262144
--1 -1 4100 0;
+-1 -1 4900 0;
 #X obj 98 32 bng 53 250 50 0 empty empty Play 0 -10 0 10 -262144 -1
 -1;
 #X obj 33 34 bng 53 250 50 0 empty empty Record 0 -10 0 10 -262144
 -258625 -1;
-#X text 32 11;
-#X obj 125 178 sampler 2000 1 41;
-#X connect 1 0 7 1;
-#X connect 2 0 7 3;
-#X connect 3 0 7 4;
-#X connect 4 0 7 2;
-#X connect 5 0 7 0;
-#X connect 7 0 0 0;
-#X connect 7 0 0 1;
+#X text 32 11 comment;
+#X obj 130 277 dac~ 1 2;
+#X obj 140 146 adc~ 2;
+#X obj 603 34 hsl 128 15 0 1999 0 1 empty empty Start -2 -8 0 10 -262144
+-1 -1 0 0;
+#X obj 743 31 hsl 128 15 0 2000 0 1 empty empty End -2 -8 0 10 -262144
+-1 -1 12700 0;
+#X obj 534 30 bng 53 250 50 0 empty empty Play 0 -10 0 10 -262144 -1
+-1;
+#X obj 469 32 bng 53 250 50 0 empty empty Record 0 -10 0 10 -262144
+-258625 -1;
+#X text 468 9 comment;
+#X obj 566 275 dac~ 1 2;
+#X obj 576 144 adc~ 2;
+#X obj 561 176 sampler 2000 2 43;
+#X obj 125 178 sampler 2000 2 40;
+#X connect 0 0 15 3;
+#X connect 1 0 15 4;
+#X connect 2 0 15 2;
+#X connect 3 0 15 0;
+#X connect 6 0 15 1;
+#X connect 7 0 14 3;
+#X connect 8 0 14 4;
+#X connect 9 0 14 2;
+#X connect 10 0 14 0;
+#X connect 13 0 14 1;
+#X connect 14 0 12 0;
+#X connect 14 0 12 1;
+#X connect 15 0 5 0;
+#X connect 15 0 5 1;
