@@ -1,0 +1,15 @@
+#N canvas 36 23 576 300 12;
+#X obj 142 153 project;
+#X obj 20 24 bng 38 250 50 0 empty empty Create\ a\ new\ project 0
+-10 0 10 -262144 -1 -1;
+#X obj 157 23 bng 38 250 50 0 empty empty Load\ an\ existing\ project
+0 -10 0 10 -262144 -1 -1;
+#X obj 322 21 bng 38 250 50 0 empty empty Save\ project 0 -10 0 10
+-262144 -1 -1;
+#X obj 202 212 print msg;
+#X symbolatom 15 250 38 0 0 0 - - -, f 38;
+#X connect 0 0 5 0;
+#X connect 0 1 4 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 1;
+#X connect 3 0 0 2;

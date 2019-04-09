@@ -1,0 +1,12 @@
+#N canvas 964 303 450 300 12;
+#X obj 67 144 filesaver;
+#X msg 76 55 start;
+#X msg 121 55 stop;
+#X obj 28 19 osc~ 440;
+#X msg 169 54 path /tmp;
+#X msg 258 86 name symbol kiska.aif;
+#X connect 1 0 0 1;
+#X connect 2 0 0 1;
+#X connect 3 0 0 0;
+#X connect 4 0 0 2;
+#X connect 5 0 0 2;
